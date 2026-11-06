@@ -1,0 +1,29 @@
+{
+  "name": "Damien",
+  "role": "Geospatial Analyst",
+  "headline": "Making sense of place.",
+  "intro": "Exploring the patterns, connections, and questions hidden in geographic data.",
+  "about": "I\u2019m Damien. This is the first version of my geospatial portfolio: a space for maps, spatial analysis, and work in progress. My background, experience, and interests will be added here.",
+  "approach": "Start with a clear question. Understand the data. Make the result useful and communicate its limits.",
+  "photo": "/media/profile-placeholder.svg",
+  "photoAlt": "Placeholder portrait \u2014 profile photo coming later",
+  "contactNote": "Contact details will be added after approval. In the meantime, you can visit my GitHub profile.",
+  "skills": [
+    {
+      "title": "Spatial analysis",
+      "description": "Placeholder skill area: data preparation, overlays, proximity, and suitability analysis. Confirm tools and proficiency before publishing."
+    },
+    {
+      "title": "Cartography",
+      "description": "Placeholder skill area: visual hierarchy, labels, map layouts, and accessible colour choices."
+    },
+    {
+      "title": "Remote sensing",
+      "description": "Placeholder skill area: imagery preparation, land-cover interpretation, and change detection."
+    },
+    {
+      "title": "Geospatial workflows",
+      "description": "Placeholder skill area: QGIS, Python, and reproducible data processing. Replace with verified experience."
+    }
+  ]
+}

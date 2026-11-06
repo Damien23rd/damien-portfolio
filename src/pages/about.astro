@@ -1,0 +1,6 @@
+---
+import Layout from '../layouts/Layout.astro';
+import site from '../data/site.json';
+import { url } from '../lib/paths';
+---
+<Layout title="About"><section class="page-heading"><p class="eyebrow">01 / ABOUT</p><h1>A curiosity<br/>for <em>place.</em></h1><p class="lead">The person behind the maps.</p></section><section class="about-grid"><figure class="portrait"><img src={url(site.photo)} alt={site.photoAlt} width="600" height="700"/><figcaption>Placeholder profile photo</figcaption></figure><div class="prose"><h2>Hello, I’m {site.name}.</h2><p>{site.about}</p><h3>How I approach a question</h3><p>{site.approach}</p><h3>Background & experience</h3><p>Placeholder — add education, relevant experience, volunteer contributions, and the subjects that interest you. Include only verified details.</p><a class="text-link" href={url('skills/')}>Explore skills & methods →</a></div></section></Layout>

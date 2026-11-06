@@ -1,0 +1,20 @@
+[
+  {
+    "title": "A landscape of connections",
+    "type": "Conceptual network",
+    "image": "/media/map-network.svg",
+    "alt": "Fictional network of routes and nodes on an abstract landscape",
+    "brief": "A schematic study of visual hierarchy: a river, connecting routes, and a small set of focal points.",
+    "technical": "Synthetic geometry only; no geographic extent, CRS, scale, or measured distances. Lines and symbols are design elements. Not for navigation.",
+    "source": "Original illustrative SVG; no real geographic data."
+  },
+  {
+    "title": "Reading the terrain",
+    "type": "Conceptual terrain",
+    "image": "/media/map-terrain.svg",
+    "alt": "Fictional contour-like curves and green terrain shapes",
+    "brief": "An abstract terrain composition exploring contrast and layered linework.",
+    "technical": "Illustrative curves, not elevation-derived contours. No elevation units, contour interval, projection, or analytical validity.",
+    "source": "Original illustrative SVG; no real geographic data."
+  }
+]

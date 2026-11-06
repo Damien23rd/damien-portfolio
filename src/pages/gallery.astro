@@ -1,0 +1,6 @@
+---
+import Layout from '../layouts/Layout.astro';
+import MapArt from '../components/MapArt.astro';
+import maps from '../data/maps.json';
+---
+<Layout title="Map Gallery"><section class="page-heading"><p class="eyebrow">04 / CARTOGRAPHY</p><h1>A different<br/><em>perspective.</em></h1><p class="lead">Visual studies, with the thinking behind them.</p></section><aside class="notice">Every map here is a fictional placeholder illustration. No analytical conclusions or real locations are represented.</aside><section class="gallery">{maps.map((m,i)=><article><MapArt image={m.image} alt={m.alt}/><div class="map-description"><p class="eyebrow">0{i+1} / {m.type}</p><span class="tag">Placeholder map</span><h2>{m.title}</h2><h3>Brief</h3><p>{m.brief}</p><details><summary>Technical considerations <span>+</span></summary><p>{m.technical}</p><p><strong>Source:</strong> {m.source}</p></details></div></article>)}</section></Layout>

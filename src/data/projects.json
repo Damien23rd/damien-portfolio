@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Access to green space",
+    "category": "Spatial analysis",
+    "status": "completed",
+    "summary": "Placeholder project exploring how proximity to green space could be assessed. This is a proposed case-study structure, not completed professional work.",
+    "question": "Which neighbourhoods could have limited access to green space?",
+    "method": "Describe the input datasets, coordinate reference system, walking-distance assumptions, and validation here.",
+    "outcome": "Add verified results and a link to the real project when available.",
+    "next": "Replace this sample with a completed project."
+  },
+  {
+    "title": "Land-cover change",
+    "category": "Remote sensing",
+    "status": "completed",
+    "summary": "Placeholder case study for comparing land cover across two dates. No real analysis or results are presented.",
+    "question": "How might land cover change over time?",
+    "method": "Document imagery dates, cloud screening, classification method, accuracy assessment, and limitations.",
+    "outcome": "Insert actual findings, attribution, and supporting maps.",
+    "next": "Add a real case study and reproducible workflow."
+  },
+  {
+    "title": "Community facilities atlas",
+    "category": "Data & cartography",
+    "status": "ongoing",
+    "summary": "Placeholder ongoing-work entry for an atlas of community services. No data collection or implementation is claimed.",
+    "question": "How can service locations be communicated clearly?",
+    "method": "Plan data sourcing, completeness checks, privacy review, and map design.",
+    "outcome": "Planned output: a documented map series. No deliverable exists yet.",
+    "next": "Define the study area and confirm an appropriate open dataset."
+  }
+]

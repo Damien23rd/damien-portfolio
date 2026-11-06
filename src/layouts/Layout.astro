@@ -1,0 +1,14 @@
+---
+import '../styles/global.css';
+import site from '../data/site.json';
+import { url } from '../lib/paths';
+interface Props { title: string; description?: string }
+const { title, description = 'Damien’s geospatial portfolio. Maps, spatial analysis, and work in progress. Placeholder edition.' } = Astro.props;
+const links = [['','Home'],['about/','About'],['projects/','Completed Projects'],['ongoing/','Ongoing Work'],['gallery/','Map Gallery'],['skills/','Skills'],['contact/','Contact']];
+---
+<!doctype html><html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width"/><meta name="description" content={description}/><meta name="theme-color" content="#173d36"/><title>{title} · Damien</title><link rel="icon" type="image/svg+xml" href={url('favicon.svg')}/></head><body>
+<a class="skip" href="#main">Skip to content</a>
+<header><a class="brand" href={url()} aria-label="Damien home"><span class="brand-icon">D<span>+</span></span>{site.name}<span class="brand-caption"> / GEOSPATIAL</span></a><nav aria-label="Main navigation">{links.map(([path,label]) => <a href={url(path)} aria-current={Astro.url.pathname === url(path) ? 'page' : undefined}>{label}</a>)}</nav></header>
+<main id="main"><slot/></main>
+<footer><div><a class="brand" href={url()}>Damien<span class="brand-caption"> / GEOSPATIAL</span></a><p>Questions about place. Thoughtful maps.</p></div><div><p>Version 01 · Placeholder edition</p><a href="https://github.com/Damien23rd">GitHub ↗</a><span class="footer-dot"> / </span><a href={url('contact/')}>Get in touch ↗</a></div></footer>
+</body></html>

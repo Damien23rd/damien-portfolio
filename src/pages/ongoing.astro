@@ -1,0 +1,6 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Project from '../components/Project.astro';
+import projects from '../data/projects.json';
+---
+<Layout title="Ongoing Work"><section class="page-heading"><p class="eyebrow">03 / THE WORK</p><h1>Ongoing Work</h1><p class="lead">Questions taking shape. A space for methods, progress, and next steps.</p></section><aside class="notice">Placeholder collection: these entries demonstrate the portfolio structure. No actual work or results are claimed.</aside><section class="project-list" aria-label="Ongoing Work">{projects.filter(p=>p.status === 'ongoing').map((p,i)=><Project project={p} index={i}/>)}</section></Layout>

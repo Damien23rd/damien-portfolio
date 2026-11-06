@@ -1,0 +1,106 @@
+media:
+  input: public/media
+  output: /media
+content:
+  - name: site
+    label: Profile, home & skills
+    type: file
+    path: src/data/site.json
+    fields:
+      - name: name
+        label: Display name
+        type: string
+      - name: role
+        label: Role
+        type: string
+      - name: headline
+        label: Headline
+        type: string
+      - name: intro
+        label: Introduction
+        type: text
+      - name: about
+        label: About text
+        type: text
+      - name: approach
+        label: Approach
+        type: text
+      - name: photo
+        label: Profile photo
+        type: image
+      - name: photoAlt
+        label: Profile photo description
+        type: string
+      - name: contactNote
+        label: Contact note (public)
+        type: text
+      - name: skills
+        label: Skill areas
+        type: object
+        list: true
+        fields:
+          - name: title
+            type: string
+            required: true
+          - name: description
+            type: text
+            required: true
+  - name: projects
+    label: Project entries
+    type: file
+    path: src/data/projects.json
+    list: true
+    fields:
+      - name: title
+        type: string
+        required: true
+      - name: category
+        type: string
+        required: true
+      - name: status
+        type: select
+        required: true
+        options:
+          values: [completed, ongoing]
+      - name: summary
+        type: text
+        required: true
+      - name: question
+        type: text
+        required: true
+      - name: method
+        type: text
+        required: true
+      - name: outcome
+        type: text
+        required: true
+      - name: next
+        type: text
+        required: true
+  - name: maps
+    label: Map gallery
+    type: file
+    path: src/data/maps.json
+    list: true
+    fields:
+      - name: title
+        type: string
+        required: true
+      - name: type
+        type: string
+        required: true
+      - name: image
+        type: image
+        required: true
+      - name: alt
+        type: string
+        required: true
+      - name: brief
+        type: text
+        required: true
+      - name: technical
+        type: text
+        required: true
+      - name: source
+        type: text
+        required: true

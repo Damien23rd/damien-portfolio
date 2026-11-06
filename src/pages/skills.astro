@@ -1,0 +1,5 @@
+---
+import Layout from '../layouts/Layout.astro';
+import site from '../data/site.json';
+---
+<Layout title="Skills"><section class="page-heading"><p class="eyebrow">05 / TOOLKIT</p><h1>Methods behind<br/>the <em>maps.</em></h1><p class="lead">A space to document tools, techniques, and practical experience.</p></section><aside class="notice">These are suggested skill categories, not verified claims about Damien’s proficiency.</aside><section class="skills-grid">{site.skills.map((s,i)=><article><p class="eyebrow">0{i+1} / SKILL AREA</p><h2>{s.title}</h2><p>{s.description}</p><span class="tag">Placeholder · confirmation needed</span></article>)}</section></Layout>

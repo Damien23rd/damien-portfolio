@@ -1,0 +1,6 @@
+---
+import projects from '../data/projects.json';
+interface Props { project: (typeof projects)[number]; index: number }
+const { project: p, index } = Astro.props;
+---
+<article class="project"><div class="project-number">{String(index+1).padStart(2,'0')} / <span>{p.category}</span></div><div><span class="tag">Placeholder · {p.status === 'completed' ? 'completed-project slot' : 'ongoing-work slot'}</span><h2>{p.title}</h2><p>{p.summary}</p><details><summary>Explore case-study outline <span>↗</span></summary><dl><dt>The question</dt><dd>{p.question}</dd><dt>Method & considerations</dt><dd>{p.method}</dd><dt>Outcome</dt><dd>{p.outcome}</dd><dt>Next step</dt><dd>{p.next}</dd></dl></details></div></article>

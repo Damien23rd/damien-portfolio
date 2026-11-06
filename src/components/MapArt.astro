@@ -1,0 +1,6 @@
+---
+import { url } from '../lib/paths';
+interface Props { image?: string; alt?: string }
+const { image = '/media/map-network.svg', alt = 'Illustrative map with fictional routes and landscape; not real geographic data' } = Astro.props;
+---
+<figure class="map-art"><img src={url(image)} alt={alt} width="1000" height="700"/><figcaption><span>ILLUSTRATIVE MAP</span><span>FICTIONAL DATA / V.01</span></figcaption></figure>

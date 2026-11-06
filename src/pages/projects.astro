@@ -1,0 +1,6 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Project from '../components/Project.astro';
+import projects from '../data/projects.json';
+---
+<Layout title="Completed Projects"><section class="page-heading"><p class="eyebrow">02 / THE WORK</p><h1>Completed Projects</h1><p class="lead">A home for finished analysis and documented outcomes.</p></section><aside class="notice">Placeholder collection: these entries demonstrate the portfolio structure. No actual work or results are claimed.</aside><section class="project-list" aria-label="Completed Projects">{projects.filter(p=>p.status === 'completed').map((p,i)=><Project project={p} index={i}/>)}</section></Layout>
